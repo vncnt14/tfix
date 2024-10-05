@@ -1,0 +1,692 @@
+* {
+    margin-left: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    margin-left: 0px;
+}
+/* side menu  */
+.navigation {
+    position: fixed;
+    width: 239px;
+    height: 100%;
+    background: #343a40;
+    transition: 0.5s;
+
+
+}
+
+.navigation.active {
+    width: 200px;
+    margin-right: 12px;
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li {
+    position: relative;
+    width: 100%;
+    list-style-type: none;
+
+}
+
+.navigation ul li:hover {
+
+    font-weight: bold;
+
+}
+
+.navigation ul li :nth-child(1):hover {
+    background: transparent;
+
+}
+
+.navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    margin: -8px 0px 0px 7px;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 65px;
+    height: 52px;
+    line-height: 56px;
+    text-align: center;
+    opacity: .8;
+
+}
+
+.navigation ul li a .icon .fa {
+    color: #fff;
+    font-size: 24px;
+}
+
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 0px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+.title {
+    padding: 24px;
+    padding-left: 0px;
+    margin-left: -22px;
+
+}
+
+.headding {
+    font-size: 16px;
+    padding: 14px;
+    font-weight: lighter;
+    color: #c2c7d0;
+    margin-top: 0px;
+}
+
+/*main*/
+.main {
+    position: absolute;
+    width: 1111px;
+    left: 241px;
+    min-height: 100vh;
+    background: #f5f5f5;
+    transition: 0.5s;
+}
+
+.main.active {
+    width: 1244px;
+    left: 66px;
+
+}
+
+.main .topbar {
+    width: 99%;
+    background: #fff;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.toggle::before {
+    content: '\f0c9';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    font-size: 24px;
+    text-align: center;
+    color: rgba(0, 0, 0, .5);
+}
+
+.time {
+    color: grey;
+    font-size: 11px;
+    margin-left: 41px;
+}
+
+.chat img {
+    width: 45px;
+    height: 43px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.home {
+
+    padding: 19px;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, .5);
+}
+
+.home:hover {
+    color: black;
+}
+
+.right1 {
+    margin-left: 712px;
+}
+
+.form-control {
+    height: 40px;
+    border-radius: 0px;
+
+}
+
+.nav-item {
+    padding: 19px 1px 18px 13px;
+    color: rgba(0, 0, 0, .5);
+    text-decoration: none;
+}
+
+.nav-link .fa:hover {
+    color: black;
+}
+
+#hovnav:hover {
+    color: black;
+}
+
+#hovnav1:hover {
+    color: black;
+}
+
+#hovnav2:hover {
+    color: black;
+}
+
+#hovnav3:hover {
+    color: black;
+}
+
+#navitem {
+    padding: 0px 8px 0px 1px;
+}
+
+.box {
+    width: 24%;
+    height: 136px;
+    padding: 20px;
+}
+
+.percent {
+    width: 60%;
+    font-size: 30px;
+    color: white;
+    margin: -16px 0 0 -15px;
+    font-weight: bold;
+}
+
+.shorttxt {
+    color: white;
+    margin: -14px 0 0 -13px;
+}
+
+.iconhov .fa:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.2);
+}
+
+.iconhov .fa {
+    transition: transform 1.2s;
+    font-size: 46px;
+    color: white;
+    margin: 0 0 0 43px;
+}
+
+.content {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.1);
+    color: #f1f1f1;
+    width: 265px;
+    padding: 2px;
+    margin: 31px 0 0 -21px;
+    border-radius: 8px;
+}
+
+.container1 {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: .3rem;
+    margin: 10px 3px 0 1px;
+    padding-left: 13px;
+    width: 591px;
+    font-size: 14px;
+    background-color: #d2d6de;
+    border: 1px solid #d2d6de;
+    color: #444;
+    padding: 5px 10px;
+
+}
+
+.container2 {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: .3rem;
+    margin: 10px 3px 0 1px;
+    padding-left: 13px;
+    width: 591px;
+    font-size: 14px;
+    background-color: #d2d6de;
+    border: 1px solid #d2d6de;
+    color: #444;
+    padding: 5px 10px;
+
+}
+
+.darker {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.name {
+    font-size: 12px;
+    font-weight: 600;
+    float: left;
+}
+
+.time1 {
+    font-size: 12px;
+    color: #697582;
+    float: right;
+}
+
+.container1::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.time-right {
+    float: right;
+    color: #aaa;
+    font-size: 12px;
+    margin: -1px 17px 0px 449px;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+    font-size: 12px;
+    margin: 0px 454px 0px 0px;
+}
+
+div.ex1 {
+    width: 101%;
+    height: 303px;
+    overflow: scroll;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.month {
+    padding: 13px 25px;
+    width: 100%;
+    background-color: #28a745;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+
+.month ul li:hover {
+    color: black;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #28a745;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.weekdays li:hover {
+    color: black;
+}
+
+.days {
+    padding: 10px 0;
+    background: #28a745;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: white;
+}
+
+.days li:hover {
+    color: black;
+}
+
+.days li .active {
+    padding: 5px;
+    background-color: forestgreen;
+    color: white !important
+}
+
+#dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 271px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#dropdown-menu a {
+    color: black;
+    padding: 0px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+#dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+#dropdown:hover .btn {
+    background-color: transparent;
+}
+
+#dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+
+#dropdown-menu1 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#dropdown-menu1 a {
+    color: black;
+    padding: 0px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#dropdown-menu1 a:hover {
+    background-color: #ddd;
+}
+
+#dropdown1:hover .dropdown-menu {
+    display: block;
+}
+
+#dropdown1:hover .btn {
+    background-color: transparent;
+}
+
+#donut:hover {
+    color: cadetblue;
+}
+
+.calender {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+}
+
+.list {
+    padding: 1px;
+    list-style-type: none;
+    border: 1px solid #d4cdcd;
+    border-radius: 0px;
+    background-color: whitesmoke;
+}
+
+.list a {
+    margin: 0 9px 0 9px;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 0 0 0 0;
+    border-radius: 6px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+#sales {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    width: 60%;
+    border-radius: 16px;
+    padding: 5px 19px 19px 0px;
+    margin: 0px 0px 58px 0px;
+    background-color: white;
+}
+
+.head {
+    font-size: 28px;
+    margin-left: 10px;
+    margin-bottom: 22px;
+}
+
+.sd {
+
+    margin: -29px 0 0 30px;
+}
+
+.sales1 {
+    width: 80%;
+    font-size: 20px;
+}
+
+#imgsales {
+    width: 100%;
+    height: 300px;
+}
+
+#visitors {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 35%;
+    font-size: 20px;
+    padding: 10px;
+    flex-wrap: wrap;
+    color: white;
+    padding: 0 0 0 0;
+    margin: 0 14px 0 21px;
+
+}
+
+#visit {
+    width: 380px;
+    height: 344px;
+}
+
+.card-title {
+    cursor: move;
+    font-size: 24px;
+}
+
+.visiticon {
+    margin-left: 184px;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+}
+
+#chatt {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 60%;
+    font-size: 20px;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin: -51px 26px 150px 9px;
+    border-radius: 16px;
+}
+
+#faa {
+    font-weight: 900;
+    font-size: 13px;
+    color: grey;
+}
+
+#faa1 {
+    font-weight: 900;
+    font-size: 13px;
+    color: grey;
+}
+
+#faa2 {
+    font-weight: 900;
+    font-size: 13px;
+    color: grey;
+}
+
+.graph {
+    background: #17a2b8 linear-gradient(180deg, #3ab0c3, #17a2b8) repeat-x;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: 9px 9px 12px 0px;
+    border-radius: 16px;
+}
+
+.graph1 {
+    margin-left: 131px;
+}
+
+#graphimg {
+    width: 361px;
+    height: 344px;
+    margin: 0 0 0 25px;
+}
+
+.todolist {
+    margin: -24px 0 0 21px;
+
+}
+
+#row3list {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: white;
+    border-radius: 16px;
+    margin: -139px 37px 51px 5px;
+}
+
+.design {
+    display: flex;
+    flex-direction: row;
+    background-color: #f8f9fa;
+    border-left: 2px solid #e9ecef;
+    color: #495057;
+    margin-bottom: 2px;
+    padding: 10px;
+}
+
+.ttime {
+    margin: -15px 0 0 63px;
+    font-size: 11px;
+}
+
+#calenderrow {
+    width: 35%;
+    border-radius: 16px;
+    color: white;
+    height: 388px;
+}
+
+.year {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.month {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.sideimg {
+    opacity: .6;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.logo {
+    width: 32px;
+}
