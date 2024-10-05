@@ -45,7 +45,7 @@ mysqli_close($connection);
             border-bottom: 2px solid white; /* Add white border to the bottom of the header */
             display: flex; /* Make the header flex container */
             justify-content: space-between; /* Align items with space between */
-            align-items: center; /* Align items vertically */
+            align-items: center; 
         }
 
         nav {
