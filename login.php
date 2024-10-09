@@ -55,14 +55,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else {
             echo '<script>';
             echo 'alert("Invalid Username or Password");';
-            echo 'setTimeout(function() { window.location.href = "tfixlogin.php"; },);';
+            echo 'setTimeout(function() { window.location.href = "index.php"; },);';
             echo '</script>';
             exit();
         }
     } else {
         echo '<script>';
         echo 'alert("Invalid Username or Password");';
-        echo 'setTimeout(function() { window.location.href = "tfixlogin.php"; },);';
+        echo 'setTimeout(function() { window.location.href = "index.php"; },);';
         echo '</script>';
         exit();
     }
